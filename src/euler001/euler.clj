@@ -1,6 +1,6 @@
 (ns euler001.euler)
 
-(defn zerorem?
+(defn- zerorem?
   [numer denom]
   (= 0 (rem numer denom)))
 
