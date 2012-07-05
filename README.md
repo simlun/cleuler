@@ -1,13 +1,33 @@
 # euler001
 
-A Clojure library designed to ... well, that part is up to you.
+
+## Preconditions
+
+Install [Leiningen](http://leiningen.org/):
+
+1. Download the script: `https://raw.github.com/technomancy/leiningen/preview/bin/lein`
+2. Place it on your $PATH.
+3. Set it to be executable.
+
 
 ## Usage
 
-FIXME
+* Run the tests:
 
-## License
+        $ lein midje
+        >>> clojure.test summary:
+        Ran 1 tests containing 1 assertions.
+        0 failures, 0 errors.
+        >>> Midje summary:
+        All claimed facts (5) have been confirmed. 
 
-Copyright © 2012 FIXME
+* Use the function in the REPL:
 
-Distributed under the Eclipse Public License, the same as Clojure.
+        $ lein repl
+        /.../
+        user=> (require 'euler001.euler)
+        nil
+        user=> (euler001.euler/multiplesum 10)
+        23
+
+
