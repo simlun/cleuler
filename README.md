@@ -21,6 +21,10 @@ Install [Leiningen](http://leiningen.org/):
         >>> Midje summary:
         All claimed facts (5) have been confirmed. 
 
+* Run the tests continously:
+
+        $ lein midje --lazytest
+
 * Use the function in the REPL:
 
         $ lein repl
