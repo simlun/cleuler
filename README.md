@@ -1,4 +1,6 @@
-# euler002
+# cleuler
+
+simlun's and petterik's [Project Euler](http://projecteuler.net/) solutions in Clojure!
 
 
 ## Preconditions
