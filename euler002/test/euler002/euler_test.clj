@@ -14,6 +14,10 @@
   (fib 92) => 7540113804746346429 
   (fib 93) => 12200160415121876738) 
 
+(fact
+  (< (last (find-first-euler-fib)) 4000000) => true
+  (> (last (find-first-euler-fib)) 3000000) => true)
+
 (future-fact
   (sum-even-fib 189) => 188)
 
