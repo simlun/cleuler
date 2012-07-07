@@ -2,3 +2,5 @@
   (:use midje.sweet
         euler002.euler))
 
+(fact
+  (fib 0) => 1)
