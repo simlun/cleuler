@@ -1,4 +1,4 @@
-(ns euler001.euler-test
+(ns euler002.euler-test
   (:use midje.sweet
         euler001.euler))
 
