@@ -18,6 +18,9 @@
   ([]  (take-while #(< % 4000000) (find-euler-fibs 0)))
   ([a] (cons (fib a) (lazy-seq (find-euler-fibs (inc a))))))
 
+(defn sum-even-fibs-less-than 
+  [x] (reduce + (filter even? (find-euler-fibs))))
+
 (defn find-fibs
   [max-fib]
   (reduce + (for [n (range)
