@@ -14,10 +14,14 @@
   (fib 92) => 7540113804746346429 
   (fib 93) => 12200160415121876738N) 
 
-(fact
-  (< (last (find-euler-fibs)) 4000000) => true
-  (> (last (find-euler-fibs)) 3000000) => true)
+
+(def limit 4000000)
 
 (fact
-  (find-fibs 4000000) => 4613732)
+  (< (last (find-euler-fibs limit)) limit) => true
+  (> (last (find-euler-fibs limit)) 3000000) => true)
+
+(fact "The Project Euler problem 2 answer"
+  (sum-even-fibs-less-than limit) => 4613732 
+  (sum-even-fibs-less-than' limit) => 4613732)
 
