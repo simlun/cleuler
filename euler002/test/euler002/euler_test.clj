@@ -7,7 +7,8 @@
   (fib 1) => 1
   (fib 2) => 1
   (fib 3) => 2
-  (fib 4) => 3)
+  (fib 4) => 3
+  (fib 12) => 144)
 
 (fact
   (sum-even-fib 189) => 188)
