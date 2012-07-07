@@ -12,7 +12,7 @@
 
 (fact "fib can handle even bigint-large numbers"
   (fib 92) => 7540113804746346429 
-  (fib 93) => 12200160415121876738N) 
+  (fib 93) => 12200160415121876738) 
 
 
 (def limit 4000000)
