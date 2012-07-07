@@ -2,7 +2,7 @@
 
 (defn fib-fast 
   [i a b limit]
-  (if (< i limit) (fib-fast (+ i 1) b (+ a b) limit) b))
+  (if (< i limit) (fib-fast (inc i) b (+ a b) limit) b))
 
 (defn fib 
   [n]
