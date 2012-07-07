@@ -16,6 +16,6 @@
 
 (defn sum-even-fib [x] 0)
 
-(defn find-first-euler-fib
-  ([]  (take-while #(< % 4000000) (find-first-euler-fib 0)))
-  ([a] (cons (fib a) (lazy-seq (find-first-euler-fib (inc a))))))
+(defn find-euler-fibs
+  ([]  (take-while #(< % 4000000) (find-euler-fibs 0)))
+  ([a] (cons (fib a) (lazy-seq (find-euler-fibs (inc a))))))
