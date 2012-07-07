@@ -1,5 +1,6 @@
 (ns euler002.euler)
 
-(defn fib
+(defn fib 
   [n]
-  1)
+  (cond (= n 0) 0
+        (= n 1) 1))

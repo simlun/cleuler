@@ -3,4 +3,5 @@
         euler002.euler))
 
 (fact
-  (fib 0) => 1)
+  (fib 0) => 0
+  (fib 1) => 1)
