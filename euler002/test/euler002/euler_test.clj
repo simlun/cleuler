@@ -9,3 +9,6 @@
   (fib 3) => 2
   (fib 4) => 3)
 
+(fact
+  (sum-even-fib 189) => 188)
+

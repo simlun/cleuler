@@ -1,6 +1,12 @@
 (ns euler002.euler)
 
+(defn fib-fast 
+  [i a b limit]
+  (if (< i limit) (fib-fast (+ i 1) b (+ a b) limit) b))
+
 (defn fib 
   [n]
-  (if (< n 2) n
-      (+ (fib (- n 1)) (fib (- n 2)))))
+  (if (= n 0) 0 (fib-fast 1 0 1 n)))
+
+(defn sum-even-fib [x] 0)
+
