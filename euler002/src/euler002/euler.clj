@@ -14,8 +14,15 @@
     0
     (fib-fast (bigint 1) (bigint 0) (bigint 1) (bigint n))))
 
-(defn sum-even-fib [x] 0)
-
 (defn find-euler-fibs
   ([]  (take-while #(< % 4000000) (find-euler-fibs 0)))
   ([a] (cons (fib a) (lazy-seq (find-euler-fibs (inc a))))))
+
+(defn find-fibs
+  [max-fib]
+  (reduce + (for [n (range)
+      :let [f (fib n)]
+      :when (even? f)
+      :while (< f max-fib)]
+  f)))
+

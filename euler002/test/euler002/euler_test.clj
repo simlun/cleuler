@@ -12,12 +12,11 @@
 
 (fact "fib can handle even bigint-large numbers"
   (fib 92) => 7540113804746346429 
-  (fib 93) => 12200160415121876738) 
+  (fib 93) => 12200160415121876738N) 
 
 (fact
   (< (last (find-euler-fibs)) 4000000) => true
   (> (last (find-euler-fibs)) 3000000) => true)
 
-(future-fact
-  (sum-even-fib 189) => 188)
-
+(fact
+  (find-fibs 4000000) => 4613732)
