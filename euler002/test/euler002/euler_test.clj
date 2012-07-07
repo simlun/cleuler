@@ -10,6 +10,6 @@
   (fib 4) => 3
   (fib 12) => 144)
 
-(fact
+(future-fact
   (sum-even-fib 189) => 188)
 
