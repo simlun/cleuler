@@ -16,11 +16,11 @@
 
 ; One solution
 (defn find-euler-fibs
-  ([x]   (take-while #(< % x) (find-euler-fibs 0 x)))
-  ([a x] (cons (fib a) (lazy-seq (find-euler-fibs (inc a) x)))))
+  ([] (find-euler-fibs 1))
+  ([a] (filter even? (cons (fib a) (lazy-seq (find-euler-fibs (inc a)))))))
 
 (defn sum-even-fibs-less-than 
-  [x] (reduce + (filter even? (find-euler-fibs x))))
+  [x] (reduce + (take-while #(< % x) (find-euler-fibs))))
 
 ; Another solution
 (defn- even-fibs-less-than

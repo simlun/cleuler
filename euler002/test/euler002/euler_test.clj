@@ -18,8 +18,7 @@
 (def limit 4000000)
 
 (fact
-  (< (last (find-euler-fibs limit)) limit) => true
-  (> (last (find-euler-fibs limit)) 3000000) => true)
+  (take 4 (find-euler-fibs)) => '(2 8 34 144))
 
 (fact "The Project Euler problem 2 answer"
   (sum-even-fibs-less-than limit) => 4613732 
