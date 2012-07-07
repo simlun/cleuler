@@ -1,6 +1,6 @@
 (ns euler002.euler-test
   (:use midje.sweet
-        euler001.euler))
+        euler002.euler))
 
 (fact "multiplesum of 2 is 0"
   (multiplesum 2) => 0)
