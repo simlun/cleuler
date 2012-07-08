@@ -1,6 +1,6 @@
-(ns euler002.euler-test
+(ns cleuler.euler002-test
   (:use midje.sweet
-        euler002.euler))
+        cleuler.euler002))
 
 (fact
   (fib 0) => 0

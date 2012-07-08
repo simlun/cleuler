@@ -1,4 +1,4 @@
-(ns euler002.euler)
+(ns cleuler.euler002)
 
 (defn- fib-fast 
   [i a b limit]
