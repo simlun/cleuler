@@ -1,6 +1,6 @@
-(ns euler002.euler-test
+(ns cleuler.euler002-test
   (:use midje.sweet
-        euler002.euler))
+        cleuler.euler002))
 
 (fact
   (fib 0) => 0
@@ -12,7 +12,7 @@
 
 (fact "fib can handle even bigint-large numbers"
   (fib 92) => 7540113804746346429 
-  (fib 93) => 12200160415121876738N) 
+  (fib 93) => 12200160415121876738) 
 
 
 (def limit 4000000)

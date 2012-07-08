@@ -1,4 +1,4 @@
-(ns euler001.euler)
+(ns cleuler.euler001)
 
 (defn- zerorem?
   [numer denom]
